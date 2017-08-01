@@ -1,0 +1,11 @@
+<p align="center">Okay <%=fname%> <%=lname%>, the answer to <%=num1%> <%=calc%> 
+<%=num2%> is <%=answer%>.</p>
+<hr/>
+<form align="center" method = "post" action ="/redo">
+    <input type = "radio" name = "Do another?" > Do another?
+    <input type = "hidden" name = "user_name" value = <%=name%>>
+    <input type = "hidden" name = "user_password" value = <%=password%>>
+    <input type = "hidden" name = "first_name" value = <%=fname%>>
+    <input type = "hidden" name = "last_name" value = <%=lname%>>
+    <input type = "submit" value = "Submit"> 
+</form>
